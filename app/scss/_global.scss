@@ -1,0 +1,36 @@
+
+html{
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   height: 100%;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 42px;
+    color: #191919;
+    margin-bottom: 40px;
+}
+
+.filter {
+    button {
+        border: none;
+        background-color: transparent;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #939393;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-left: 20px;
+        &.mixitup-control-active {
+            color: #1a1a1a;
+        }
+        &:hover {
+            color: #1a1a1a;
+        }
+    }
+}

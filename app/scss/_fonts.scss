@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Rubik-Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Rubik-Medium'),
+        url("../fonts/AnyConv.com__Rubik-Medium.woff") format("woff"),
+        url("../fonts/AnyConv.com__Rubik-Medium.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Rubik-Regular"),
+         url("../fonts/AnyConv.com__Rubik-Regular.woff") format("woff"),
+         url("../fonts/AnyConv.com__Rubik-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DMSans-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("DMSans-Regular"),
+         url("../fonts/AnyConv.com__DMSans-Regular.woff") format("woff"),
+         url("../fonts/AnyConv.com__DMSans-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DMSans-Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: local("DMSans-Bold"),
+         url("../fonts/AnyConv.com__DMSans-Bold.woff") format("woff"),
+         url("../fonts/AnyConv.com__DMSans-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DMSans-Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: local("DMSans-Medium"),
+         url("../fonts/AnyConv.com__DMSans-Medium.woff") format("woff"),
+         url("../fonts/AnyConv.com__DMSans-Medium.woff2") format("woff2");
+    font-display: swap;
+}

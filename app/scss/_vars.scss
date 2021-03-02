@@ -1,0 +1,37 @@
+%rubik-500 {
+    font-family: 'Rubik-Medium';
+    font-weight: 500;
+
+}
+
+%rubik-400 {
+    font-family: 'Rubik-Regular';
+    font-weight: 400;
+
+}
+
+%dmsans-700 {
+    font-family: 'DMSans-Bold';
+    font-weight: 700;
+
+}
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular';
+    font-weight: 400;
+}
+
+%dmsans-500 {
+    font-family: 'DMSans-Medium';
+    font-weight: 500;
+}
+
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+ @function min($numbers...) {
+@return m#{i}n(#{$numbers});
+}
+
+
