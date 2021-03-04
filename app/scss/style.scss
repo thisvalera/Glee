@@ -61,17 +61,19 @@
     &__num {
         position: absolute;
         background-color: #fff;
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 22px;
         border-radius: 50%;
-        top: 4px;
-        right: 20px;
+        top: 1px;
+        right: 14px;
         text-align: center;
         display: inline-block;
+        font-size: 10px;
+        line-height: 25px;
     }
     &__num-barrow {
-        right: 26px;
-        top: 5px;
+        right: 23px;
+        top: 1px;
     }
     &__btn-item__barrow {
         padding: 22px 0;
@@ -235,30 +237,18 @@
     }
 }
 
-
-.top{
+.top {
     padding: 20px 0 30px;
     background-color: #edf1f4;
-    margin: 0 auto;
-    &__inner{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-     a{
-        color: #222933;
-     }
-    }
-    &__title{
+    &__title {
+        @extend %rubik-400;
         font-size: 36px;
         line-height: 42px;
         margin-bottom: 8px;
         color: #222933;
+        text-align: center;
     }
 }
-
-
-
 
 .slider-shop {
     background-image: url("../images/content/slider-shop-bg.png");
@@ -334,6 +324,8 @@
         line-height: 9px;
         color: #243f4d;
         background-color: rgba(#fff, 0.5);
+        outline-color: #7b7b7b;
+        cursor: pointer;
     }
 }
 
@@ -512,6 +504,9 @@
         }
     }
     &__item-text {
+        &:first-child {
+            margin-bottom: 50px;
+        }
         @extend %rubik-400;
         font-size: 16px;
         line-height: 30px;
@@ -740,6 +735,74 @@ a.articles-content__link {
     }
 }
 
+.login {
+    padding: 120px 0;
+}
 
+.login-form {
+    display: flex;
+    justify-content: center;
+    label, 
+    a{
+        font-size: 14px;
+        line-height: 22px;
+        color: #436372;
+    }
+    
+    &__form {
+        max-width: 475px;
+    }
+}
+
+.form {
+    &__input-login,
+    &__input-password{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #f6f6f6;
+    }
+    &__input-password{
+        margin-bottom: 35px;
+    }
+    &__input-login{
+        margin-bottom: 20px;
+    }
+    &__button-login,
+    &__button-create {
+        @extend %rubik-500;
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+        padding: 17px 0;
+        border: none;
+        cursor: pointer;
+    }
+    &__button-login{
+        margin-bottom: 35px;
+        background-color: #a3bbc8;
+        color: #fff;
+    }
+    &__help-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    &__link-register {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+       
+
+    }
+    &__button-create{
+        border: 1px solid #a3bbc8;
+        background-color: transparent;
+        color: #243f4d
+    }
+    
+}
 
 @import "media";

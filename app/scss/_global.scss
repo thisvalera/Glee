@@ -5,7 +5,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-  
+    color: $deafault;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 main {
@@ -17,6 +20,39 @@ main {
     line-height: 42px;
     color: #191919;
     margin-bottom: 40px;
+    @extend %dmsans-700;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        & + .breadcrumbs__item {
+            padding-left: 15px;
+            margin-left: 9px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        &:not(:first-child) {
+            &::after {
+                content: "/";
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 24px;
+        color: #222933;
+    }
 }
 
 .filter {
