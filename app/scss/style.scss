@@ -61,19 +61,19 @@
     &__num {
         position: absolute;
         background-color: #fff;
-        width: 18px;
-        height: 22px;
+        width: 13px;
+        height: 17px;
         border-radius: 50%;
-        top: 1px;
-        right: 14px;
+        top: 3px;
+        right: 20px;
         text-align: center;
         display: inline-block;
-        font-size: 10px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 21px;
     }
     &__num-barrow {
-        right: 23px;
-        top: 1px;
+        right: 26px;
+        top: 5px;
     }
     &__btn-item__barrow {
         padding: 22px 0;
@@ -796,6 +796,9 @@ a.articles-content__link {
         overflow: hidden;
         clip: rect(0 0 0 0);
         position: absolute;
+        &:checked + .form__checkbox-this {
+            background-image: url("../images/icons/check.svg");
+        }
     }
     &__checkbox-this {
         width: 15px;
@@ -804,9 +807,7 @@ a.articles-content__link {
         position: absolute;
         margin-right: -15px;
         margin-top: 2px;
-        &:checked + .form__checkbox-this {
-            background-image: url("../images/icons/check.svg");
-        }
+       
     }
     &__checkbox-text {
         padding-left: 25px;
