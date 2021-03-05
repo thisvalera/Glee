@@ -742,13 +742,13 @@ a.articles-content__link {
 .login-form {
     display: flex;
     justify-content: center;
-    label, 
-    a{
+    label,
+    a {
         font-size: 14px;
         line-height: 22px;
         color: #436372;
     }
-    
+
     &__form {
         max-width: 475px;
     }
@@ -756,15 +756,15 @@ a.articles-content__link {
 
 .form {
     &__input-login,
-    &__input-password{
+    &__input-password {
         width: 100%;
         padding: 10px;
         border: 1px solid #f6f6f6;
     }
-    &__input-password{
+    &__input-password {
         margin-bottom: 35px;
     }
-    &__input-login{
+    &__input-login {
         margin-bottom: 20px;
     }
     &__button-login,
@@ -777,7 +777,7 @@ a.articles-content__link {
         border: none;
         cursor: pointer;
     }
-    &__button-login{
+    &__button-login {
         margin-bottom: 35px;
         background-color: #a3bbc8;
         color: #fff;
@@ -790,19 +790,37 @@ a.articles-content__link {
         margin-bottom: 35px;
         border-bottom: 1px solid #f6f6f6;
     }
+    &__input-checkbox {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+    }
+    &__checkbox-this {
+        width: 15px;
+        height: 15px;
+        background-color: #ebebeb;
+        position: absolute;
+        margin-right: -15px;
+        margin-top: 2px;
+        &:checked + .form__checkbox-this {
+            background-image: url("../images/icons/check.svg");
+        }
+    }
+    &__checkbox-text {
+        padding-left: 25px;
+    }
     &__link-register {
         display: block;
         text-align: center;
         margin-bottom: 20px;
-       
-
     }
-    &__button-create{
+    &__button-create {
         border: 1px solid #a3bbc8;
         background-color: transparent;
-        color: #243f4d
+        color: #243f4d;
     }
-    
 }
 
 @import "media";
