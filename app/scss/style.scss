@@ -602,7 +602,7 @@
 }
 
 .video {
-    padding: 120px 0 450px;
+    padding: 120px 0;
 
     &__preview {
         background-repeat: no-repeat;
@@ -630,19 +630,21 @@
 }
 
 .articles {
-    background-color: #fef7f0;
-    height: 200px;
+    &__bg {
+        height: 229px;
+        background-color: #fef7f0;
+    }
 }
 
 .articles-box {
-    transform: translateY(-65%);
+    margin-bottom: -229px;
 }
 
 .articles-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     @extend %dmsans-700;
     color: #262626;
     &__link {
@@ -687,10 +689,10 @@
         font-size: 18px;
         background-color: #a3bbc8;
         border-radius: 15px;
-        padding: 10px 30px;
+        padding: 5px 30px;
         display: inline-block;
         margin-top: -20%;
-        transform: translateY(-20%);
+        transform: translateY(-35%);
         margin-bottom: 10px;
         transition: all 0.3s;
         &:hover {
@@ -701,7 +703,7 @@
         width: 280px;
         @extend %dmsans-500;
         font-size: 18px;
-        min-height: 86px;
+        min-height: 111px;
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 15px;
         margin-bottom: 20px;
@@ -807,7 +809,6 @@ a.articles-content__link {
         position: absolute;
         margin-right: -15px;
         margin-top: 2px;
-       
     }
     &__checkbox-text {
         padding-left: 25px;
@@ -821,6 +822,37 @@ a.articles-content__link {
         border: 1px solid #a3bbc8;
         background-color: transparent;
         color: #243f4d;
+    }
+}
+
+.conditions {
+    padding: 115px 0 20px;
+    &__content {
+        max-width: 100%;
+    }
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    &__menu-list {
+       
+        width: 100%;
+        margin-bottom: 70px;
+        margin-left: 35px;
+    }
+  
+    
+    &__menu-item {
+        list-style: decimal-leading-zero;
+        margin-bottom: 20px;
+    }
+    &__content-title {
+        margin-bottom: 20px;
+    }
+    &__content-descr {
+        margin-bottom: 70px;
     }
 }
 
