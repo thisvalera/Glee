@@ -732,7 +732,7 @@ a.articles-content__link {
     margin-bottom: 75px;
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 }
@@ -837,13 +837,11 @@ a.articles-content__link {
         margin-bottom: 25px;
     }
     &__menu-list {
-       
         width: 100%;
         margin-bottom: 70px;
         margin-left: 35px;
     }
-  
-    
+
     &__menu-item {
         list-style: decimal-leading-zero;
         margin-bottom: 20px;
