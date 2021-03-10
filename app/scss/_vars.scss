@@ -1,4 +1,6 @@
-$deafault: #243f4d;  
+$deafault: #243f4d; 
+$accent: #edf1f4;
+ 
 
 
 %rubik-500 {
@@ -29,6 +31,31 @@ $deafault: #243f4d;
     font-weight: 500;
 }
 
+%checkbox{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+%blog-title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 38px;
+        height: 3px;
+        background-color: #c8d6de;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
 
 @function max($numbers...) {
 @return m#{a}x(#{$numbers});
