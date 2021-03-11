@@ -915,6 +915,7 @@ a.articles-content__link {
 .filter-item {
     max-width: 270px;
     width: 100%;
+    margin-bottom: 60px;
 }
 .blog-filter {
     &__inner {
@@ -957,11 +958,37 @@ a.articles-content__link {
         padding: 5px 20px;
         border-radius: 5px;
     }
+
     &__item-category__checkbox-text {
         line-height: 42px;
     }
     &__item-category__checkbox-icon {
         line-height: 42px;
+    }
+    &__item-rec-post__title{
+        @extend %blog-title;
+        margin-bottom: 35px;
+    }
+}
+
+.recent-post {
+    &__item-img-link {
+        margin-right: 20px;
+    }
+    &__wrapper{
+        display: flex;
+      align-items: end;
+        width: 100%; 
+    }
+    &__item-link__title{
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        @extend %rubik-400;
+    }
+    &__item-link__date{
+        font-size: 12px;
+        color: #9a9a9a;
     }
 }
 
