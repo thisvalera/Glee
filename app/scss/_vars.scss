@@ -40,21 +40,13 @@ $accent: #edf1f4;
 }
 
 %blog-title{
+    display: inline-block;
+    padding-right: 60px;
     @extend %dmsans-700;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     position: relative;
-    &::after{
-        content: '';
-        position: absolute;
-        width: 38px;
-        height: 3px;
-        background-color: #c8d6de;
-        right: 100px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 @function max($numbers...) {
