@@ -1078,4 +1078,26 @@ a.articles-content__link {
     }
 }
 
+.blog-details{
+    padding: 120px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content-one-paragraph{
+        @extend %rubik-500;
+        margin-bottom: 20px;
+
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+}
+
+.blockquote{
+    width: 100%;
+    background-color: #edf1f4;
+    border-left: 6px solid  #a3bbc8;
+}
+
 @import "media";
