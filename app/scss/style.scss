@@ -984,6 +984,7 @@ a.articles-content__link {
             background-color: $accent;
         }
     }
+
     &__item-category__checkbox {
         display: flex;
         justify-content: space-between;
@@ -991,6 +992,9 @@ a.articles-content__link {
         padding: 5px 20px;
         border-radius: 5px;
         margin-bottom: 10px;
+        &:hover{
+            background-color: $accent;
+        }
     }
 
     &__item-category__checkbox-text {
@@ -1084,6 +1088,9 @@ a.articles-content__link {
         display: flex;
         justify-content: space-between;
     }
+    &__content{
+        max-width: 840px;
+    }
     &__content-one-paragraph{
         @extend %rubik-500;
         margin-bottom: 20px;
@@ -1095,9 +1102,24 @@ a.articles-content__link {
 }
 
 .blockquote{
+    padding: 25px 100px 25px 30px;
     width: 100%;
     background-color: #edf1f4;
     border-left: 6px solid  #a3bbc8;
+    &__bottom{
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background-color: #a3bbc8;
+            left: 0;
+            margin-top: 15px;
+        }
+    }
+
 }
 
 @import "media";

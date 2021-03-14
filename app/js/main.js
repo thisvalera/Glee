@@ -16,15 +16,15 @@ $(function () {
     autoplay: true,
   });
 
-  // var mixerProducts = mixitup('.products-gallery__gallery', {
-  //   selectors: {
-  //     control: '.products-gallery__btn'
-  //   }
-  // });
+  var mixerProducts = mixitup('.products-gallery__gallery', {
+    selectors: {
+      control: '.products-gallery__btn'
+    }
+  });
 
-  // var mixerDesign = mixitup('.design-gallery__items', {
-  //   selectors: {
-  //     control: '.design__btn'
-  //   }
-  // });
+  var mixerDesign = mixitup('.design-gallery__items', {
+    selectors: {
+      control: '.design__btn'
+    }
+  });
 });
