@@ -944,8 +944,7 @@ a.articles-content__link {
     &__inner {
         max-width: 270px;
     }
-    &__item-search {
-        width: 100%;
+    &__item-search {    
         max-width: 270px;
         margin-bottom: 50px;
     }
@@ -956,6 +955,7 @@ a.articles-content__link {
         border: 1px solid $accent;
         margin-right: -3px;
         padding: 10px;
+        width: 100%;
     }
     &__item-search__btn {
         background-color: $accent;
@@ -1106,6 +1106,7 @@ a.articles-content__link {
     width: 100%;
     background-color: #edf1f4;
     border-left: 6px solid  #a3bbc8;
+    margin-bottom: 40px;
     &__bottom{
         padding-left: 40px;
         position: relative;
