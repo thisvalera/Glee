@@ -122,7 +122,7 @@
                         </blockquote>
                         <div class="details">
                             <img class="details__img" src="images/blog/details.jpg" alt="images details">
-                            <div class="details-info">
+                            <div class="details__info">
                                 <h6 class="details__title">
                                     Riusmod tempor incididunt
                                 </h6>
@@ -144,12 +144,14 @@
                         <div class="blog-details__author">
                             <div class="blog-details__author-info">
                                 <img class="blog-details__author-photo" src="images/blog/author.jpg" alt="photo-author">
-                                <span class="blog-details__author-name">
-                                    Mark N. Hernandez
-                                </span>
-                                <span class="blog-details__author-position">
-                                    Designer
-                                </span>
+                                <div class="blog-details__author-info__inner">
+                                    <span class="blog-details__author-name">
+                                        Mark N. Hernandez
+                                    </span>
+                                    <span class="blog-details__author-position">
+                                        Designer
+                                    </span>
+                                </div>
                             </div>
                             <div class="blog-details__author-contact">
                                 <div class="blog-details__author-tags">
@@ -162,40 +164,126 @@
                                             Trending
                                         </li>
                                     </ul>
-                                    <div class="blog-details__author-social">
-                                        <span>Share:</span>
-                                        <ul class="blog-details__author-social__list">
-                                            <li class="blog-details__author-social__item">
-                                                <a href="#" class="blog-details__author-social__item-link">
-                                                    <img class="blog-details__author-social__img"
-                                                        src="images/icons/facebook.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="blog-details__author-social__item">
-                                                <a href="#" class="blog-details__author-social__item-link">
-                                                    <img class="blog-details__author-social__img"
-                                                        src="images/icons/facebook.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="blog-details__author-social__item">
-                                                <a href="#" class="blog-details__author-social__item-link">
-                                                    <img class="blog-details__author-social__img"
-                                                        src="images/icons/facebook.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="blog-details__author-social__item">
-                                                <a href="#" class="blog-details__author-social__item-link">
-                                                    <img class="blog-details__author-social__img"
-                                                        src="images/icons/facebook.jpg" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
-
+                                <div class="blog-details__author-social">
+                                    <span>Share:</span>
+                                    <ul class="blog-details__author-social__list">
+                                        <li class="blog-details__author-social__item">
+                                            <a href="#" class="blog-details__author-social__item-link">
+                                                <img class="blog-details__author-social__img"
+                                                    src="images/icons/facebook.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="blog-details__author-social__item">
+                                            <a href="#" class="blog-details__author-social__item-link">
+                                                <img class="blog-details__author-social__img"
+                                                    src="images/icons/twiter.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="blog-details__author-social__item">
+                                            <a href="#" class="blog-details__author-social__item-link">
+                                                <img class="blog-details__author-social__img"
+                                                    src="images/icons/insta.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="blog-details__author-social__item">
+                                            <a href="#" class="blog-details__author-social__item-link">
+                                                <img class="blog-details__author-social__img"
+                                                    src="images/icons/g-plus.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="blog-details__comments">
+                            <h4 class="blog-details__comments-title">
+                                3 Comments
+                            </h4>
+                            <div class="blog-details__comments-item">
+                                <img class="blog-details__comments-photo" src="images/blog/comment-1.jpg"
+                                    alt="photo user">
+                                <div class="blog-details__comments-content">
+                                    <div class="blog-details__comments-top">
+                                        <span class="blog-details__comments-name">
+                                            Delores G. Roberts
+                                        </span>
+                                        <span class="blog-details__connents-date">
+                                            Add 11 Oct 2020
+                                        </span>
+                                    </div>
+                                    <p class="blog-details__comments-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                        massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent
+                                        per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                                    </p>
+                                    <a class="blog-details__comments-link" href="#">
+                                        Reply
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-details__comments-item blog-details__comments-item__second">
+                                <img class="blog-details__comments-photo" src="images/blog/comment-2.jpg"
+                                    alt="photo user">
+                                <div class="blog-details__comments-content blog-details__comments-content__second">
+                                    <div class="blog-details__comments-top">
+                                        <span class="blog-details__comments-name">
+                                            Shannon S. Williams
+                                        </span>
+                                        <span class="blog-details__connents-date">
+                                            Add 11 Oct 2020
+                                        </span>
+                                    </div>
+                                    <p class="blog-details__comments-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                        massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent
+                                        per conubia nostra
+                                    </p>
+                                    <a class="blog-details__comments-link" href="#">
+                                        Reply
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-details__comments-item">
+                                <img class="blog-details__comments-photo" src="images/blog/comment-3.jpg"
+                                    alt="photo user">
+                                <div class="blog-details__comments-content">
+                                    <div class="blog-details__comments-top">
+                                        <span class="blog-details__comments-name">
+                                            Nicholas R. Coley
+                                        </span>
+                                        <span class="blog-details__connents-date">
+                                            Add 11 Oct 2020
+                                        </span>
+                                    </div>
+                                    <p class="blog-details__comments-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                        massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent
+                                        per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                                    </p>
+                                    <a class="blog-details__comments-link" href="#">
+                                        Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-comment">
+                                <h3 class="post-comment__title">
+                                    Leave A Comment
+                                </h3>
+                                <form class="post-comment__form" action="#">
+                                    <div class="post-comment__form-input__inner">
+                                    <input class="post-comment__form-input__name" type="text" placeholder="Name">
+                                    <input class="post-comment__form-input__mail" type="text" placeholder="youremail@gmail.com">
+                                </div>
+                                <textarea class="post-comment__form-textarea" placeholder="Comment">
+                                </textarea>
+                                <button class="post-comment__form-btn" type="submit">
+                                    post comment
+                                </button>
+                                </form>
+                            </div>
+                        </div>
                     <div class="blog-filter__inner">
                         <div class="blog-filter__item-search filter-item">
                             <form class="blog-filter__item-search__form" action="#">
