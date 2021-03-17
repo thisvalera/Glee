@@ -1,5 +1,19 @@
 $(function () {
 
+  $('.product__filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data) {
+      $('.product__filter-price__from').text(data.from);
+      $('.product__filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.product__filter-price__from').text(data.from);
+      $('.product__filter-price__to').text(data.to);
+    },
+
+  });
+
   $('.pagination__link').on('click', function () {
     $('.pagination__link').removeClass('pagination__link--active');
     $(this).toggleClass('pagination__link--active');
