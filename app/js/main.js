@@ -1,5 +1,14 @@
 $(function () {
 
+    $(".recent-product__star").rateYo({
+      starWidth: "10px",
+      normalFill: "#d6d6d6",
+      ratedFill: "#ffcc00",
+      spacing   : "5px",
+      readOnly: true,
+     
+    });
+
   $('.product__filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
