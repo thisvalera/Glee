@@ -1450,10 +1450,10 @@ a.articles-content__link {
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         padding: 12px 15px;
         cursor: pointer;
-        transition: all .5s;
-        &:hover{
+        transition: all 0.5s;
+        &:hover {
             background-color: #a3bbc8;
-            path{
+            path {
                 fill: #fff;
             }
         }
@@ -1491,4 +1491,95 @@ a.articles-content__link {
         border-radius: 5px;
     }
 }
+
+.contact {
+    padding: 120px 0 135px;
+    &__mini-title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        @extend %dmsans-700;
+        color: #a3bbc8;
+    }
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 57px;
+        color: #436372;
+        @extend %dmsans-700;
+        margin-bottom: 80px;
+    }
+    &__link-box {
+        max-width: 270px;
+        text-align: center;
+        margin: 0 auto;
+        color: #565872;
+        a {
+            color: #565872;
+        }
+    }
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    &__form {
+        width: 620px;
+    }
+    &__form-input__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__user{
+        position: relative;
+        background-image: url("../images/icons/user-form-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 50% right 2%;
+        background-size: 15px;
+        
+    }
+    &__email{
+        position: relative;
+        background-image: url("../images/icons/email-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 50% right 2%;
+        background-size: 20px;
+    }
+    &__form-input {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        background-color: #fafafa;
+ 
+    }
+    &__form-textarea {
+        width: 100%;
+        padding: 10px;
+        resize: none;
+        min-height: 175px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #fafafa;
+        position: relative;
+        background-image: url("../images/icons/mesage-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 5% right 2%;
+        background-size: 20px;
+    }
+    &__form-btn {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #a3bbc8;
+        padding: 15px 50px;
+        @extend %dmsans-700;
+        font-size: 15px;
+        line-height: 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
 @import "media";
