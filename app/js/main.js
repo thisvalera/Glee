@@ -1,10 +1,12 @@
 $(function () {
 
   $('.related-products__slider').slick({
-     prevArrow: '<button type="button" class="slick-prev"></button>',
+     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left-slider.svg" alt="arrow"></button>',
+     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right-slider.svg" alt="arrow"></button>',
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    infinite: false,
     
   })
 
