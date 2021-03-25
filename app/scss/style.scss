@@ -1297,6 +1297,7 @@ a.articles-content__link {
         padding: 15px;
         background-color: #a3bbc8;
         border: none;
+        cursor: pointer;
     }
 }
 
@@ -1602,11 +1603,12 @@ a.articles-content__link {
         height: 170px;
         border: 2px solid #f2f2f2;
         margin-bottom: 33px;
+        cursor: pointer;
         img {
             width: 120px;
             height: 140px;
-            object-fit: cover;
-            display: inline-block;
+            object-fit: contain;
+           margin-top: 10px;
         }
     }
     &__slider {
@@ -1774,6 +1776,18 @@ a.articles-content__link {
         &.product-tabs__content-item--active {
             display: block;
         }
+    }
+    &__content-comment__item{
+        justify-content: flex-start;
+    }
+    &__comment-content{
+        margin-left: 50px;
+    }
+    &__post-coments{
+        max-width: 800px;
+    }
+    &__form-input__mail{
+        margin-left: 50px;
     }
 }
 
