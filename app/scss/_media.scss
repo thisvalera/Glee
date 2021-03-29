@@ -1,0 +1,89 @@
+@media (max-width: 1070px) {
+    .menu {
+        margin-left: 20px;
+        order: 1;
+        &__btn {
+            display: block;
+        }
+        &__list {
+            display: flex;
+            
+            position: absolute;
+            top: 150px;
+            width: 100%;
+            left: 0;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        &__list-item + .menu__list-item {
+            margin-left: 0;
+            
+        }
+        &__list-item{
+            width: 100%;
+            border-bottom: 1px solid $default;
+            text-align: center;
+            &:first-child{
+                border-top: 1px solid $default;
+            }
+        }
+        
+        &__list-link{
+            width: 100%;
+            padding: 10px 0;
+            display: block;
+            
+        }
+    }
+    .user-menu {
+        &__inner {
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 587px) {
+    .menu {
+        padding-right: 10px;
+        order: 0;
+    }
+}
+
+@media (max-width: 387px) {
+    .user-menu {
+        &__btn-item__user {
+            margin-left: 5px;
+        }
+        &__btn-item__heart {
+            padding: 20px 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+        }
+        &__btn-item__barrow {
+            padding: 20px 0;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        &__btn-item__heart::before {
+            right: -20px;
+            top: 8px;
+            opacity: 0.5;
+        }
+        &__num {
+            right: 11px;
+        }
+        &__btn-item__heart::before {
+            right: -33px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .user-menu {
+        &__btn-item__heart::before {
+            opacity: 0;
+        }
+    }
+}
