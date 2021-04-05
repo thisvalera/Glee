@@ -28,26 +28,7 @@
 
 .menu {
     &__btn {
-        width: 30px;
-        height: 3px;
-        background-color: $default;
-        position: relative;
-        display: none;
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: $default;
-            
-        }
-        &::after {
-            top: 10px;
-        }
-        &::before {
-            bottom: 10px;
-        }
+     display: none;
     }
     &__list {
         display: flex;
@@ -145,23 +126,20 @@
 }
 
 .footer {
-    &__top-inner {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-bottom: 10px;
-    }
+  padding-top: 60px;
     &__inner {
         display: flex;
         justify-content: center;
         padding-bottom: 70px;
         border-bottom: 1px solid #dae4e9;
+        
     }
     &__item {
         @extend %rubik-400;
         font-size: 14px;
         line-height: 22px;
         width: 33%;
+        margin-bottom: 10px;
         a {
             color: #7b7b7b;
         }
@@ -365,6 +343,7 @@
     &__inner {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     &__item {
         display: flex;
@@ -392,17 +371,21 @@
     }
 }
 
-.delivery,
-.support {
+.delivery{
     position: relative;
-    &::before {
+    padding: 0 118px;
+    &::after,
+    &::before{
         content: "";
-        position: absolute;
-        background-color: rgba(#585858, 0.2);
-        width: 1px;
-        height: 190px;
-        right: -118px;
-        top: -44px;
+                position: absolute;
+                background-color: rgba(#585858, 0.2);
+                width: 1px;
+                height: 190px;
+                right: 0;
+                top: -44px;
+    }
+    &::after{
+        left: 0;
     }
 }
 
