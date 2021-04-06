@@ -34,7 +34,7 @@
         }
     }
 }
-@media (max-width: 1070px) {
+@media (max-width: 1071px) {
     .menu {
         margin-left: 20px;
         order: 1;
@@ -144,6 +144,12 @@
 
     .video__preview {
         height: 400px;
+    }
+
+    .articles-content {
+        &__items {
+            padding-left: 100px;
+        }
     }
 }
 
