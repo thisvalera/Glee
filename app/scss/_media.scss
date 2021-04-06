@@ -3,13 +3,12 @@
         &__gallery {
             grid-template-columns: repeat(3, 3fr);
         }
-        .design-gallery {
-            &__items {
-                grid-template-columns: repeat(2, 2fr);
-            }
+    }
+    .design-gallery {
+        &__items {
+            grid-template-columns: repeat(2, 2fr);
         }
     }
-
 
     .products-banner {
         display: none;
@@ -142,6 +141,10 @@
             margin-bottom: 20px;
         }
     }
+
+    .video__preview {
+        height: 400px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -159,9 +162,33 @@
         &__gallery {
             grid-template-columns: repeat(2, 3fr);
         }
+        &__gallery-item {
+            width: 100%;
+        }
     }
 }
 
+@media (max-width: 816px) {
+    .design-gallery {
+        &__info {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item {
+            background-position: bottom 20% right 14%;
+            max-width: 100%;
+            &:nth-child(6) {
+                background-position: bottom 20% right 14%;
+            }
+        }
+        &__style {
+            padding-right: 20px;
+        }
+    }
+}
 
 @media (max-width: 785px) {
     .slider-shop {
@@ -191,6 +218,20 @@
             max-width: none;
         }
     }
+
+    .video {
+        padding: 50px 0;
+        &__preview {
+            height: 300px;
+        }
+        &__link {
+            width: 123px;
+            height: 121px;
+        }
+        &__btn-img {
+            padding: 33px;
+        }
+    }
 }
 
 @media (max-width: 690px) {
@@ -206,97 +247,129 @@
         &__gallery {
             grid-template-columns: repeat(1, 2fr);
         }
-        &__gallery-item{
-            margin-left: 50px;
-    
-        }
-}
+    }
 
-@media (max-width: 505px) {
-    .footer {
-        &__item {
-            width: 100%;
-        }
-        &__item-menu {
-            display: flex;
-        }
-        &__item-menu__list {
-            & + .footer__item-menu__list {
-                margin-left: 15px;
+    @media (max-width: 620px) {
+        .advantages {
+            &__item {
+                width: 100%;
             }
         }
     }
-}
 
-@media (max-width: 620px) {
-    .advantages {
-        &__item {
-            width: 100%;
-        }
-    }
-}
-
-@media (max-width: 587px) {
-    .menu {
-        padding-right: 10px;
-        order: 0;
-    }
-}
-
-@media (max-width: 570px) {
-    .slider-shop {
-        height: 566px;
-    }
-    .slider-shop__title {
-        font-size: 33px;
-        line-height: 35px;
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-width: 387px) {
-    .user-menu {
-        &__btn-item__user {
-            margin-left: 5px;
-        }
-        &__btn-item__heart {
-            padding: 20px 0;
-            padding-left: 20px;
-            padding-right: 20px;
-            position: relative;
-        }
-        &__btn-item__barrow {
-            padding: 20px 0;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        &__btn-item__heart::before {
-            right: -20px;
-            top: 8px;
-            opacity: 0.5;
-        }
-        &__num {
-            right: 11px;
-        }
-        &__btn-item__heart::before {
-            right: -33px;
+    @media (max-width: 587px) {
+        .menu {
+            padding-right: 10px;
+            order: 0;
         }
     }
 
-    .footer__item-text {
-        padding-right: 10px;
-    }
-
-    .footer-bottom__nav-item {
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 350px) {
-    .user-menu {
-        &__btn-item__heart::before {
-            opacity: 0;
+    @media (max-width: 570px) {
+        .slider-shop {
+            height: 566px;
+            &__btn {
+                padding: 19px 8px;
+                padding-right: 50px;
+                max-width: 136px;
+            }
+        }
+        .slider-shop__title {
+            font-size: 33px;
+            line-height: 35px;
+            margin-bottom: 5px;
         }
     }
-}
+
+    @media (max-width: 505px) {
+        .footer {
+            &__item {
+                width: 100%;
+            }
+            &__item-menu {
+                display: flex;
+            }
+            &__item-menu__list {
+                & + .footer__item-menu__list {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .design-gallery {
+            &__item {
+                background-position: bottom 20% right 114%;
+                &:nth-child(6) {
+                    background-position: bottom 20% right 134%;
+                }
+                &:nth-child(5) {
+                    background-position: bottom right 20%;
+                }
+                &:nth-child(3) {
+                    background-position: bottom 20% right 30%;
+                }
+            }
+            &__inner {
+                padding: 28px 0 0 30px;
+            }
+        }
+    }
+
+    @media (max-width: 387px) {
+        .user-menu {
+            &__btn-item__user {
+                margin-left: 5px;
+            }
+            &__btn-item__heart {
+                padding: 20px 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                position: relative;
+            }
+            &__btn-item__barrow {
+                padding: 20px 0;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            &__btn-item__heart::before {
+                right: -20px;
+                top: 8px;
+                opacity: 0.5;
+            }
+            &__num {
+                right: 11px;
+            }
+            &__btn-item__heart::before {
+                right: -33px;
+            }
+        }
+
+        .footer__item-text {
+            padding-right: 10px;
+        }
+
+        .footer-bottom__nav-item {
+            padding-right: 10px;
+        }
+
+        .video {
+            padding: 50px 0;
+            &__preview {
+                height: 200px;
+            }
+            &__link {
+                width: 93px;
+                height: 87px;
+            }
+            &__btn-img {
+                padding: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .user-menu {
+            &__btn-item__heart::before {
+                opacity: 0;
+            }
+        }
+    }
 }
