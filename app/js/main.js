@@ -1,35 +1,9 @@
 $(function () {
 
 
-  $('.articles-content__items').slick({
-
-    responsive: [
-      {
-        breakpoint: 2048,
-        settings: "unslick"
-      },
-      {
-        breakpoint: 1071,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        }
-      },
-      {
-
-        breakpoint: 922,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-        },
-  
-]
-  });
-
-
   $('.menu__btn').on('click', function () {
-    $('.menu__list').toggleClass('menu__list--active');
+    $('menu__list').toggleClass('menu__list--active');
+  
   });
 
   $('.related-products__slider').slick({
@@ -46,7 +20,6 @@ $(function () {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
     $(this).addClass('product-tabs__top-item--active');
-
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
 
