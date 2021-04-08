@@ -1,0 +1,88 @@
+.login {
+    padding: 120px 0;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    label,
+    a {
+        font-size: 14px;
+        line-height: 22px;
+        color: #436372;
+    }
+
+    &__form {
+        max-width: 475px;
+    }
+}
+
+.form {
+    &__input-login,
+    &__input-password {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #f6f6f6;
+    }
+    &__input-password {
+        margin-bottom: 35px;
+    }
+    &__input-login {
+        margin-bottom: 20px;
+    }
+    &__button-login,
+    &__button-create {
+        @extend %rubik-500;
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+        padding: 17px 0;
+        border: none;
+        cursor: pointer;
+    }
+    &__button-login {
+        margin-bottom: 35px;
+        background-color: #a3bbc8;
+        color: #fff;
+    }
+    &__help-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    &__input-checkbox {
+        @extend %checkbox;
+        &:checked + .form__checkbox-this {
+            background-image: url("../images/icons/check.svg");
+        }
+    }
+    &__checkbox-this {
+        width: 15px;
+        height: 15px;
+        background-color: #ebebeb;
+        position: absolute;
+        margin-right: -15px;
+        margin-top: 2px;
+    }
+    &__checkbox-text {
+        padding-left: 25px;
+    }
+    &__link-register {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__button-create {
+        border: 1px solid #a3bbc8;
+        background-color: transparent;
+        color: #243f4d;
+    }
+}
+@media(max-width: 450px){
+    .login{
+        padding: 45px 0;
+    }
+}
