@@ -1,0 +1,182 @@
+.contact {
+    padding: 120px 0 135px;
+    &__mini-title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        @extend %dmsans-700;
+        color: #a3bbc8;
+    }
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 57px;
+        color: #436372;
+        @extend %dmsans-700;
+        margin-bottom: 80px;
+    }
+    &__link-box {
+        max-width: 270px;
+        text-align: center;
+        margin: 0 auto;
+        color: #565872;
+        a {
+            color: #565872;
+        }
+    }
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    &__form {
+        width: 610px;
+    }
+    &__form-input__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__user {
+        position: relative;
+        background-image: url("../images/icons/user-form-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 50% right 2%;
+        background-size: 15px;
+    }
+    &__email {
+        position: relative;
+        background-image: url("../images/icons/email-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 50% right 2%;
+        background-size: 20px;
+    }
+    &__form-input {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        background-color: #fafafa;
+    }
+    &__form-textarea {
+        width: 100%;
+        padding: 10px;
+        resize: none;
+        min-height: 175px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #fafafa;
+        position: relative;
+        background-image: url("../images/icons/mesage-black.svg ");
+        background-repeat: no-repeat;
+        background-position: top 5% right 2%;
+        background-size: 20px;
+    }
+    &__form-btn {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #a3bbc8;
+        padding: 15px 50px;
+        @extend %dmsans-700;
+        font-size: 15px;
+        line-height: 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 1148px) {
+    .contact {
+        &__title {
+            margin-bottom: 60px;
+        }
+    }
+    .contact-link {
+        flex-wrap: wrap;
+        &__item {
+            margin-top: 20px;
+        }
+    }
+    .contact-bottom {
+        flex-direction: column-reverse;
+        &__map {
+            margin: 0 auto 20px;
+        }
+        &__form {
+            margin: 0 auto;
+            max-width: 835px;
+            width: 100%;
+        }
+        &__form-input {
+            width: 49%;
+        }
+    }
+}
+
+@media (max-width: 749px) {
+    .contact-link {
+        &__item {
+            max-width: none;
+            width: 100%;
+        }
+    }
+    .contact-bottom {
+        &__map {
+            iframe {
+                height: 300px;
+                padding: 0;
+                margin: 0;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 749px) {
+    .contact-bottom {
+        &__form-input__inner {
+            flex-direction: column;
+            margin-bottom: 0;
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contact {
+        padding: 45px 0 45px;
+    }
+    .contact-link {
+        &__item {
+            min-width: 0;
+            width: 100%;
+        }
+    }
+    .contact-bottom {
+        &__map {
+            iframe {
+                height: 300px;
+                padding: 0;
+                margin: 0;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-bottom {
+        &__map {
+            iframe {
+                height: 270px;
+                padding: 0;
+                margin: 0;
+                width: 270px;
+            }
+        }
+    }
+}
