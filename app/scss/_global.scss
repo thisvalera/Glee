@@ -117,6 +117,9 @@ main {
             background-color: $accent;
         }
     }
+    &__item-brand__checkbox {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
     &__item-checkbox-text {
         line-height: 42px;
     }
@@ -126,9 +129,8 @@ main {
     &__item-brand__checkbox-icon {
         color: #c2c2c2;
     }
-    &__item-category__checkbox{
+    &__item-category__checkbox {
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-        
     }
 }
 
@@ -147,28 +149,27 @@ main {
         padding: 70px 0;
         margin: 0 auto;
         background-color: #fbfbfb;
-        transition: all .3s;
-        &:hover{
+        transition: all 0.3s;
+        &:hover {
             border: 3px solid #a3bbc8;
-            .contact-link__images{
+            .contact-link__images {
                 background-color: #a3bbc8;
             }
-            path{
-                fill:#fff;
+            path {
+                fill: #fff;
             }
         }
     }
     &__images {
-        transition: all .3s;
+        transition: all 0.3s;
         width: 80px;
         height: 80px;
         border-radius: 15px;
         background-color: #fff;
         margin: 0 auto;
-        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05); 
-      text-align: center;
-      padding-top: 15px;
-       
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        text-align: center;
+        padding-top: 15px;
     }
     &__title {
         text-align: center;
