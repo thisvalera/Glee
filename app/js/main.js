@@ -1,6 +1,5 @@
 $(function () {
 
-
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -16,7 +15,35 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     infinite: false,
-
+    responsive: [
+      {
+          breakpoint: 1070,
+          settings: {
+              slidesToShow: 3,
+          }
+      },
+      {
+          breakpoint: 800,
+          settings: {
+              slidesToShow: 2,
+          }
+      },
+      {
+        breakpoint: 575,
+        settings : {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 465,
+        settings : {
+          autoplay: true,
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        }
+        },
+  ]
   });
 
   $('.product-tabs__top-item').on('click', function (e) {
