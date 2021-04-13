@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.filter__btn').on('click', function () {
+    $('.product-filter__inner').toggleClass('product-filter__inner--active');
+  });
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -17,33 +21,33 @@ $(function () {
     infinite: false,
     responsive: [
       {
-          breakpoint: 1070,
-          settings: {
-              slidesToShow: 3,
-          }
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 3,
+        }
       },
       {
-          breakpoint: 800,
-          settings: {
-              slidesToShow: 2,
-          }
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        }
       },
       {
         breakpoint: 575,
-        settings : {
+        settings: {
           slidesToShow: 1,
         }
       },
       {
         breakpoint: 465,
-        settings : {
+        settings: {
           autoplay: true,
           slidesToShow: 1,
           dots: true,
           arrows: false,
         }
-        },
-  ]
+      },
+    ]
   });
 
   $('.product-tabs__top-item').on('click', function (e) {

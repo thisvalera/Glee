@@ -154,7 +154,12 @@
         &__inner {
             width: 85%;
             margin: 0 auto;
+           display: none;
+            &.product-filter__inner--active{
+              display: block;
+            }
         }
+        
     }
     .filter{
         &__btn {
@@ -173,12 +178,12 @@
             font-size: 24px;
             color: #333333;
             font-weight: 700;
+            margin-bottom: 25px;
             span {
                 position: absolute;
                 background-color: $default;
                 width: 90%;
-                height: 4px;
-                transition: all 0.5s;
+   
             }
             &::after,
             &::before {
