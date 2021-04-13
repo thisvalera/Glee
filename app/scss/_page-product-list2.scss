@@ -75,6 +75,21 @@
     }
 }
 
+.product-content {
+    &__btn {
+        background-color: rgba(#a3bbc8, 0.5);
+        color: #fcfcfc;
+        padding: 5px;
+        border-radius: 25px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 300px;
+        margin: 0 auto 25px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 1199px) {
     .second-product {
         padding: 120px 0;
@@ -130,6 +145,12 @@
         }
         &__item-info {
             padding: 0;
+        }
+    }
+    .pagination {
+        &__link,
+        &__next {
+            margin-left: 10px;
         }
     }
 }
